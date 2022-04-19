@@ -1,0 +1,35 @@
+class Players
+  initalize player with user entered name (.get)
+  increase count
+  if count is more than 2, return message "There can only be 2 players."
+  assign each player a different symbol
+
+Module Actions
+  place symbol on board
+  check for winner
+
+class GameBoard
+  initialize game board
+
+  Methods
+    display game board
+    update game board
+
+Gameplay:
+  Ask for Player 1 name, initialize
+  Ask for Player 2 name, initialize
+  Initalize Board and display
+  Ask Player 1 for move
+  Update board and display
+  Check for winner
+  Ask Player 2 for move
+  Update board and display
+  Check for winner
+  *repeat until someone wins
+
+Check Winner:
+  Check if board[0][0] has a symbol
+  if it does check board[0][0+1]
+    if same check board[0][0+2]
+      if same return true
+  check 
