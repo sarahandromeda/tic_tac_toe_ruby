@@ -1,5 +1,3 @@
-require 'pry-byebug'
-
 # Functions for gameplay
 module Gameplay
   def self.setup
@@ -16,8 +14,8 @@ module Gameplay
 
   def self.play_game(user1, user2, active_board)
     current_player = user1.active == true ? user1 : user2
-    puts "Choose a row number and l(left), m(middle), or r(right).\nExample Input: 1m = center square.\n\n"
     active_board.display_board
+    puts "Choose a row number and l(left), m(middle), or r(right).\nExample Input: 1m = center square.\n\n"
     get_input(current_player, active_board)
     toggle_active_player(user1, user2)
   end
